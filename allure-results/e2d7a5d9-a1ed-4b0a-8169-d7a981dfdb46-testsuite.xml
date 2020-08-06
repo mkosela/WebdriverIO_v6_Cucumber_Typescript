@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1596455290412' stop='1596455300422'>
+    <name>demo feaure</name>
+    <title>demo feaure</title>
+    <test-cases>
+        <test-case start='1596455290415' status='broken' stop='1596455300420'>
+            <name>demo scenario</name>
+            <title>demo scenario</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1596455290418' status='broken' stop='1596455300420'>
+                    <name>When I start script</name>
+                    <title>When I start script</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1596455300421' status='canceled' stop='1596455300421'>
+                    <name>Then script is executed</name>
+                    <title>Then script is executed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>function timed out, ensure the promise resolves within 10000 milliseconds</message>
+                <stack-trace>Error: function timed out, ensure the promise resolves within 10000 milliseconds
+                    at Timeout._onTimeout (Q:\demo\node_modules\cucumber\lib\user_code_runner.js:76:18)
+                    at listOnTimeout (internal/timers.js:551:17)
+                    at processTimers (internal/timers.js:494:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

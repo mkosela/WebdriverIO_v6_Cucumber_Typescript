@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1596455759145' stop='1596455762775'>
+    <name>demo feaure</name>
+    <title>demo feaure</title>
+    <test-cases>
+        <test-case start='1596455759148' status='failed' stop='1596455762773'>
+            <name>demo scenario</name>
+            <title>demo scenario</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1596455759151' status='passed' stop='1596455759620'>
+                    <name>When I start script</name>
+                    <title>When I start script</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1596455759621' status='failed' stop='1596455762773'>
+                    <name>Then script is executed</name>
+                    <title>Then script is executed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected [Function] to be true</message>
+                <stack-trace>AssertionError: expected [Function] to be true
+                    at Demo.end (Q:\demo\features\step_definitions\demo.steps.ts:16:12)
+                    at World.bindingFunc (Q:\demo\node_modules\cucumber-tsflow\src\binding-decorator.ts:161:22)
+                    at World.executeSync (Q:\demo\node_modules\@wdio\sync\build\index.js:56:18)
+                    at Q:\demo\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

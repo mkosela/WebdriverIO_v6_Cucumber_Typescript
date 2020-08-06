@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1596455590409' stop='1596455591046'>
+    <name>demo feaure</name>
+    <title>demo feaure</title>
+    <test-cases>
+        <test-case start='1596455590412' status='broken' stop='1596455591044'>
+            <name>demo scenario</name>
+            <title>demo scenario</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1596455590415' status='passed' stop='1596455590865'>
+                    <name>When I start script</name>
+                    <title>When I start script</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1596455590865' status='broken' stop='1596455591044'>
+                    <name>Then script is executed</name>
+                    <title>Then script is executed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable
+                  (Session info: chrome=84.0.4147.105)</message>
+                <stack-trace>element not interactable
+                  (Session info: chrome=84.0.4147.105)
+                    at getErrorFromResponseBody (Q:\demo\node_modules\webdriver\build\utils.js:121:10)
+                    at WebDriverRequest._request (Q:\demo\node_modules\webdriver\build\request.js:149:56)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at Element.elementErrorHandlerCallbackFn (Q:\demo\node_modules\webdriverio\build\middlewares.js:21:24)
+                    at Element.runCommandWithHooks (Q:\demo\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Element.runCommandWithHooks (Q:\demo\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (Q:\demo\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (Q:\demo\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Homepage.search (Q:\demo\features\page_objects\homepage.ts:24:23)
+                    at Demo.end (Q:\demo\features\step_definitions\demo.steps.ts:15:14)
+                    at World.bindingFunc (Q:\demo\node_modules\cucumber-tsflow\src\binding-decorator.ts:161:22)
+                    at World.executeSync (Q:\demo\node_modules\@wdio\sync\build\index.js:56:18)
+                    at Q:\demo\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

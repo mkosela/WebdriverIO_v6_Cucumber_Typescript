@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1596110596451' stop='1596110596464'>
+    <name>demo feaure</name>
+    <title>demo feaure</title>
+    <test-cases>
+        <test-case start='1596110596458' status='passed' stop='1596110596464'>
+            <name>demo scenario</name>
+            <title>demo scenario</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1596110596461' status='passed' stop='1596110596462'>
+                    <name>When I start script</name>
+                    <title>When I start script</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1596110596462' status='passed' stop='1596110596463'>
+                    <name>Then script is executed</name>
+                    <title>Then script is executed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

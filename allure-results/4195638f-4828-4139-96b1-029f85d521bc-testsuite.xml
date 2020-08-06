@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1596455221035' stop='1596455221567'>
+    <name>demo feaure</name>
+    <title>demo feaure</title>
+    <test-cases>
+        <test-case start='1596455221042' status='broken' stop='1596455221565'>
+            <name>demo scenario</name>
+            <title>demo scenario</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1596455221047' status='broken' stop='1596455221565'>
+                    <name>When I start script</name>
+                    <title>When I start script</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1596455221565' status='canceled' stop='1596455221565'>
+                    <name>Then script is executed</name>
+                    <title>Then script is executed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid selector: Unable to locate an element with the xpath expression .//name[normalize-space() = ""q""] because of the following error:
+                SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/name[normalize-space() = ""q""]' is not a valid XPath expression.
+                  (Session info: chrome=84.0.4147.105)</message>
+                <stack-trace>invalid selector: Unable to locate an element with the xpath expression .//name[normalize-space() = ""q""] because of the following error:
+                SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/name[normalize-space() = ""q""]' is not a valid XPath expression.
+                  (Session info: chrome=84.0.4147.105)
+                    at getErrorFromResponseBody (Q:\demo\node_modules\webdriver\build\utils.js:121:10)
+                    at WebDriverRequest._request (Q:\demo\node_modules\webdriver\build\request.js:149:56)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at Browser.$ (Q:\demo\node_modules\webdriverio\build\commands\browser\$.js:19:15)
+                    at Browser.runCommandWithHooks (Q:\demo\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Browser.runCommandWithHooks (Q:\demo\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Browser.wrapCommandFn (Q:\demo\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at global.$ (Q:\demo\node_modules\@wdio\runner\build\index.js:189:36)
+                    at Homepage.get (Q:\demo\features\page_objects\homepage.ts:5:12)
+                    at Homepage.search (Q:\demo\features\page_objects\homepage.ts:13:10)
+                    at Demo.start (Q:\demo\features\step_definitions\demo.steps.ts:11:14)
+                    at World.bindingFunc (Q:\demo\node_modules\cucumber-tsflow\src\binding-decorator.ts:161:22)
+                    at World.executeSync (Q:\demo\node_modules\@wdio\sync\build\index.js:56:18)
+                    at Q:\demo\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
